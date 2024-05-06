@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<ion-content class="page-content" padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Message</ion-label>
+      <ion-textarea rows="6" [(ngModel)]="message"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="primary" (click)="sendEmail()">Send Message</button>
+  </div>
+</ion-content>

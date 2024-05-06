@@ -1,0 +1,32 @@
+<ion-content padding class="background">
+  <ion-card>
+    <img src="assets/imgs/fishable-banner.png" />
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <form #form="ngForm">
+
+        <ion-item>
+          <ion-icon slot="start" name="person-circle"></ion-icon>
+          <ion-input type="email" name="email" placeholder="Email" ngModel required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon slot="start" name="key"></ion-icon>
+          <ion-input type="password" name="password" placeholder="Password" ngModel required></ion-input>
+        </ion-item>
+
+        <ion-card-content>
+          <button ion-button expand="block" color="primary" (click)="onRegister(form)" type="button">Log in / Register</button>
+          <!-- <button ion-button expand="block" color="secondary" (click)="onRegister(form)" type="button">Register</button> -->
+        </ion-card-content>
+
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/fishable-fishing.png" />
+  </ion-card>
+</ion-content>

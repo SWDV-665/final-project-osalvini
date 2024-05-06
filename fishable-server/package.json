@@ -1,0 +1,28 @@
+{
+  "name": "fishable-server",
+  "version": "1.0.0",
+  "description": "Fishable postgres server",
+  "main": "server.js",
+  "scripts": {
+    "start": "bash start.bash",
+    "server": "nodemon server.js",
+    "server:start": "pm2 start server.js",
+    "server:stop": "pm2 stop server.js",
+    "server:restart": "pm2 restart all",
+    "server:status": "pm2 status"
+  },
+  "author": "Olivia Salvini",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "pm2": "^5.3.1"
+  }
+}

@@ -1,0 +1,13 @@
+page-home {
+  h3.no-item {
+    color: map-get($colors, 'custom' );
+    font-size: 1.2rem;
+  }
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}

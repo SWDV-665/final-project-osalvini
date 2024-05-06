@@ -1,0 +1,28 @@
+<div class="item-modal">
+  <div class="modal-content">
+
+    <input type="text" [(ngModel)]="item.name" placeholder="Enter name" class="modal-input">
+    <input type="text" [(ngModel)]="item.description" placeholder="Enter description" class="modal-input">
+
+    <input *ngIf="subTitle === 'My Lures' || subTitle === 'Bait History'"
+           type="text" [(ngModel)]="item.price" placeholder="Enter price" class="modal-input">
+
+    <input *ngIf="subTitle === 'Favorite Fishing Spots'"
+           type="text" [(ngModel)]="gpsCoordinates" placeholder="Loading GPS..." class="modal-input" disabled>
+
+    <img *ngIf="item.image" [src]="item.image" alt="Preview" style="width: 50px; height: 50px;">
+
+    <button class="modal-button icon-button" (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </button>
+
+    <button class="modal-button icon-button" (click)="chooseImage()">
+      <ion-icon name="images"></ion-icon>
+    </button>
+
+    <button class="modal-button" (click)="saveItem()">Save</button>
+
+    <button class="modal-button" (click)="close()">Close</button>
+
+  </div>
+</div>

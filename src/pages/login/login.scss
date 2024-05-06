@@ -1,0 +1,47 @@
+ion-content.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ion-card {
+  width: 80%;
+  max-width: 400px; 
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ion-item {
+  --border-color: #ccc;
+  font-size: 16px;
+  padding: 10px;
+}
+
+ion-button {
+  background-color: #007bff;
+  color: #fff;
+  width: 100%;
+  margin-top: 20px;
+}
+
+ion-button:hover {
+  background-color: #0056b3;
+}
+
+ion-button:active {
+  background-color: #004080;
+}
+
+ion-card img {
+  width: 100%;
+}
+
+ion-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-content {
+  padding: 20px;
+}

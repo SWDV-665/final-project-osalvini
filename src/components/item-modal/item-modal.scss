@@ -1,0 +1,36 @@
+.item-modal {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px;
+  background: white;
+  border-radius: 5px;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #007aff;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

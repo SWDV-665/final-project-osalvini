@@ -1,0 +1,8 @@
+<ion-tabs>
+  <ion-tab [root]="tab1Root" tabTitle="About" tabIcon="information-circle"></ion-tab>
+  <ion-tab [root]="tab2Root" tabTitle="Feed" tabIcon="people-outline"></ion-tab>
+  <ion-tab [root]="tab3Root" tabTitle="Profile" tabIcon="person"></ion-tab>
+  <ion-tab [root]="tab4Root" tabTitle="FindRiverAccess" tabIcon="map-outline"></ion-tab>
+  <ion-tab [root]="tab5Root" tabTitle="Contact" tabIcon="call-outline"></ion-tab>
+  <ion-tab (ionSelect)="logout()" tabTitle="Logout" tabIcon="log-out-outline"></ion-tab>
+</ion-tabs>

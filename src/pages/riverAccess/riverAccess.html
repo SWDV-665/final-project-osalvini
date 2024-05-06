@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<ion-content class="page-content" padding>
+
+  <ion-list>
+    <ion-list-header>Search</ion-list-header>
+    <ion-item>
+      <input type="text" placeholder="Find river access" [(ngModel)]="searchTerm" (ionInput)="filterResults(searchTerm)">
+      <button class="mapButton" ion-button (click)="filterResults(searchTerm)">Search</button>
+      <button class="mapButton" ion-button (click)="resetView()">Reset</button>
+      <button class="mapButton" ion-button (click)="toggleAddLocation()">
+        {{ addingLocation ? 'Cancel' : 'New Location' }}
+      </button>
+    </ion-item>
+  </ion-list>
+
+  <components-river-map (locationSelected)="saveNewLocation($event)"></components-river-map>
+</ion-content>

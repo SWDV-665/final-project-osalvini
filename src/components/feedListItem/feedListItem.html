@@ -1,0 +1,37 @@
+<ion-content padding scrollbar-y>
+
+  <ng-container *ngFor="let category of categories">
+    <ion-list-header>
+      <div style="width: 100%; height: 20px; border-bottom: 1px dotted #666666;">{{ category.subTitle }}</div>
+    </ion-list-header>
+
+    <h3 class="no-item" text-center *ngIf="category.items.length === 0">
+      No items available in the list.
+    </h3>
+
+    <ion-list *ngIf="category.items.length > 0">
+
+      <ion-item-sliding *ngFor="let item of category.items; let i = index">
+
+        <ion-item>
+          <img class="user-profile-img" [src]="item.image" alt="User Content" />
+          <h2>Name: {{item.name}}</h2>
+          <p *ngIf="item.latlong">See Map</p>
+          <p *ngIf="item.price && item.price > 0">Price: {{ item.price }}</p>
+          <p *ngIf="item.description">Description: {{ item.description }}</p>
+        </ion-item>
+
+        <!-- <ion-item-options>
+          <button (click)="shareItem(category.subTitle, item.id)" ion-button color="primary" icon-start>
+            <ion-icon name="share"></ion-icon>
+            Share
+          </button>
+        </ion-item-options> -->
+
+      </ion-item-sliding>
+
+    </ion-list>
+
+  </ng-container>
+
+</ion-content>
